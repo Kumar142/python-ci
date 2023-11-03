@@ -38,4 +38,4 @@ jobs:
       run: |
         #export PYTHONPATH=src
         python ./src/pt.py
-        #pytest
+        pytest
