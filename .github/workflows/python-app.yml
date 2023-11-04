@@ -37,7 +37,7 @@ jobs:
     - name: Test with pytest
       run: |
         #export PYTHONPATH=src
-        python ./src/pt.py
+        #python ./src/pt.py
         pytest
     - name: Deploy to Heroku
       env:
