@@ -33,7 +33,7 @@ jobs:
         pytest
     - name: Deploy to Heroku
       env:
-        #HEROKU_TOKEN: "3b6d13a6-4af2-4082-9512-21f5721ea7f7" 
+        HEROKU_TOKEN: "3b6d13a6-4af2-4082-9512-21f5721ea7f7" 
         #${{ secrets.HEROKU_TOKEN }}
         HEROKU_APP_NAME: "secret-island-77283"
         #${{ secrets.HEROKU_APP_NAME }}
