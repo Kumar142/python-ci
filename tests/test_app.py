@@ -9,4 +9,4 @@ sys.path.append(absolute_path)
 from app import index
 def test_index():
     #assert absolute_path == "/Users/kumargaurav/Desktop/python-ci/src"
-    assert index() == "Hello, world!"
+    assert index() == "Hello, world! This is kumar"
