@@ -33,10 +33,10 @@ jobs:
         pytest
     - name: Deploy to Heroku
       env:
-        HEROKU_TOKEN: "3b6d13a6-4af2-4082-9512-21f5721ea7f7" 
-        #${{ secrets.HEROKU_TOKEN }}
-        HEROKU_APP_NAME: "secret-island-77283"
-        #${{ secrets.HEROKU_APP_NAME }}
+        #HEROKU_TOKEN: "3b6d13a6-4af2-4082-9512-21f5721ea7f7" 
+        HEROKU_TOKEN: ${{ secrets.HEROKU_TOKEN }}
+        #HEROKU_APP_NAME: "secret-island-77283"
+        HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
       if: github.ref == 'refs/heads/main' && job.status == 'success'
       run: |
         git remote add heroku https://heroku:$HEROKU_TOKEN@git.heroku.com/$HEROKU_APP_NAME.git
