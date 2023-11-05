@@ -1,2 +1,2 @@
 # python-ci
-ci understanding
+ci understanding and cd on heroku
